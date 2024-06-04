@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Qomfy</title>
+    <link rel="stylesheet" href="/css/reset.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="icon" type="image/x-icon" href="/favicon.svg" />
+  </head>
+  <body>
+    <header>
+      <nav class="nav">
+        <div class="logo">Qomfy</div>
+        <ul class="nav__links">
+          <li><a href="main.html" class="active">Home</a></li>
+          <li><a href="catalog.html">Catalog</a></li>
+          <li><a href="about.html">About Us</a></li>
+        </ul>
+        <ul class="nav__links">
+          <li>
+            <a href="cart.html"><img src="/cart.png" alt="Cart" /></a>
+          </li>
+          <li><a href="login.html">Login</a></li>
+          <li><a href="register.html">Register</a></li>
+        </ul>
+        <div class="nav__burger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <h1>Welcome to Qomfy</h1>
+        <p>Explore the world of comfort with our best quality products</p>
+        <a href="/src/catalog.html" class="btn">To the catalog</a>
+      </section>
+
+      <section class="featured-products">
+        <h2>Bestselling Products</h2>
+        <div class="product-grid">
+
+          <div class="product-card">
+            <img
+              src="/img/img_1.jpg"
+              alt="Product Image"
+              class="product-card__image"
+            />
+            <p class="product-card__category">
+              Fragnance
+            </p>
+            <h3 class="product-card__title">Parfume #0016</h3>
+            <p class="product-card__description">
+              Smells like teen spirit.
+            </p>
+            <p class="product-card__price">
+              <span class="discounted-price">$39.99</span>
+              <span class="original-price">$49.99</span>
+            </p>
+            <button class="product-card__button">🛒 Add to Cart</button>
+          </div>
+
+          <div class="product-card">
+            <img
+              src="/img/img_3.jpg"
+              alt="Product Image"
+              class="product-card__image"
+            />
+            <p class="product-card__category">
+              Skincare
+            </p>
+            <h3 class="product-card__title">Moisturizing Serum #0012</h3>
+            <p class="product-card__description">
+              Feels like oasis.
+            </p>
+            <p class="product-card__price">
+              <span class="discounted-price">$14.99</span>
+              <span class="original-price">$19.99</span>
+            </p>
+            <button class="product-card__button">🛒 Add to Cart</button>
+          </div>
+          
+          <div class="product-card">
+            <img
+              src="/img/img_6.jpg"
+              alt="Product Image"
+              class="product-card__image"
+            />
+            <p class="product-card__category">
+              Haircare
+            </p>
+            <h3 class="product-card__title">Thermal Protection System #0041</h3>
+            <p class="product-card__description">
+              Secure. Contain. Protect.
+            </p>
+            <p class="product-card__price">
+              <span class="discounted-price">$24.99</span>
+              <span class="original-price">$39.99</span>
+            </p>
+            <button class="product-card__button">🛒 Add to Cart</button>
+          </div>
+
+        </div>
+        <a href="" class="btn-outlined num">1</a>
+        <a href="" class="btn-outlined num">2</a>
+        <a href="" class="btn-outlined num">3</a>
+        <a href="/src/catalog.html" class="btn-outlined">Explore more →</a>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; Qomfy is an E-commerce app made by QTeam</p>
+    </footer>
+
+    <script>
+      const burger = document.querySelector(".nav__burger");
+      const navLinks = document.querySelector(".nav__links");
+
+      burger.addEventListener("click", () => {
+        navLinks.classList.toggle("nav__links--active");
+      });
+    </script>
+  </body>
+</html>

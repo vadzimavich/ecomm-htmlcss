@@ -1,0 +1,27 @@
+body {
+  min-height: 100vh;
+}
+
+main {
+  min-height: 100%;
+}
+
+.profile-info {
+  text-align: center;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+  padding: 2rem;
+}
+
+.form-group {
+  display: inline;
+}
+.form-group input {
+  width: -moz-fit-content;
+  width: fit-content;
+}

@@ -1,0 +1,164 @@
+@import "variables", "style";
+
+@import url("https://fonts.googleapis.com/css2?family=Quattrocento+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Tenor+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+  gap: 1rem;
+}
+
+.welcome {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  margin-bottom: 2rem;
+  gap: 0.2rem;
+
+  h2 {
+    font-size: 2.5rem;
+    font-weight: 400;
+  }
+
+  p {
+    color: $color-inactive;
+    font-size: 0.9rem;
+  }
+
+  a {
+    color: $color-dark;
+    cursor: pointer;
+  }
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+input[type="email"],
+input[type="password"],
+input[type="text"],
+input[type="date"],
+input[type="address"],
+select {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid $color-line;
+  border-radius: 0.5rem;
+}
+
+.warning {
+  display: block;
+  color: $color-primary;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+}
+
+.btn-login {
+  font-family: $font-title;
+  width: 100%;
+  padding: 0.75rem;
+  background-color: $color-dark;
+  color: $color-white;
+  border: none;
+  border-radius: 0.75rem;
+  cursor: pointer;
+  font-weight: 400;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  margin-top: 1.5rem;
+  transition: 0.3s;
+
+  &:hover {
+    background-color: $color-dark-hover;
+  }
+}
+
+.login-container {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  height: 100vh;
+}
+
+.product-image {
+  background-color: $color-light;
+  position: relative;
+  img {
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.logo {
+  font-family: $font-title;
+  position: absolute;
+  top: 1.5rem;
+  left: 1.5rem;
+  font-size: 3rem;
+  font-weight: 400;
+  color: $color-white;
+  letter-spacing: -0.3rem;
+
+  a {
+    cursor: pointer;
+  }
+}
+
+.chef-name {
+  position: absolute;
+  bottom: 1rem;
+  right: 1.5rem;
+  font-size: 1rem;
+  font-weight: 200;
+  color: $color-white;
+  opacity: 0.5;
+  letter-spacing: 0.1rem;
+}
+
+.login-form {
+  background-color: $color-light;
+  padding: 15%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+
+.shipping-address,
+.billing-address {
+  margin-top: 1rem;
+}
+
+.set-as {
+  display: inline-flex;
+  align-items: center;
+
+  input {
+    width: 1.5rem;
+    height: 1.5rem;
+    accent-color: $color-dark;
+    margin: 0;
+  }
+
+  .checkmark {
+    margin-left: 0.5rem;
+  }
+}
+
+.btn-close {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  font-size: 2rem;
+  cursor: pointer;
+  color: $color-line;
+  transition: 0.3s;
+
+  &:hover {
+    color: #bbb;
+  }
+}

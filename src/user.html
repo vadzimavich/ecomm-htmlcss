@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Qomfy</title>
+    <link rel="stylesheet" href="/css/reset.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="/css/login.css" />
+    <link rel="stylesheet" href="/css/user.css" />
+    <link rel="icon" type="image/x-icon" href="/favicon.svg" />
+  </head>
+  <body>
+    <header>
+      <nav class="nav">
+        <div class="logo">Qomfy</div>
+        <ul class="nav__links">
+          <li><a href="main.html">Home</a></li>
+          <li><a href="catalog.html" class="active">Catalog</a></li>
+          <li><a href="about.html">About Us</a></li>
+        </ul>
+        <ul class="nav__links">
+          <li>
+            <a href="cart.html"><img src="/cart.png" alt="Cart" /></a>
+          </li>
+          <li><a href="login.html">Login</a></li>
+          <li><a href="register.html">Register</a></li>
+        </ul>
+        <div class="nav__burger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+    </header>
+
+<main class="profile">
+  <section class="profile-info">
+      <h2>User Profile</h2>
+      <form class="general-info">
+        <div class="form-group">
+          <label for="first-name">First Name</label>
+          <input type="text" id="first-name" name="first-name" required>
+        </div>
+        <div class="form-group">
+          <label for="last-name">Last Name</label>
+          <input type="text" id="last-name" name="last-name" required>
+        </div>
+        <div class="form-group">
+          <label for="date-of-birth">Date of Birth</label>
+          <input type="date" id="date-of-birth" name="date-of-birth" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" required>
+        </div>
+        <button class="btn edit-profile">Edit Profile</button>
+      </form>
+      <h2>Addresses</h2>
+      <ul class="address-list">
+          <li>123 Main St, City, Country</li>
+          <li>456 Another St, City, Country</li>
+      </ul>
+
+  </section>
+  <footer>
+    <p>&copy; Qomfy is an E-commerce app made by QTeam</p>
+  </footer>
+
+  <script>
+    const burger = document.querySelector(".nav__burger");
+    const navLinks = document.querySelector(".nav__links");
+
+    burger.addEventListener("click", () => {
+      navLinks.classList.toggle("nav__links--active");
+    });
+  </script>
+</main>

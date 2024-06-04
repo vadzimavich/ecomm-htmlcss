@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration - Qomfy</title>
+  <link rel="stylesheet" href="/css/reset.css">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/login.css">
+  <link rel="icon" type="image/x-icon" href="/favicon.svg">
+</head>
+
+<body>
+  <main>
+    <div class="login-container">
+      <div class="product-image">
+        <h1 class="logo"><a href="/src/main.html">Qomfy</a></h1>
+        <img src="/img/img_3.jpg" alt="Product Image">
+        <div class="chef-name">Moisturizing Serum #0012</div>
+      </div>
+      <div class="login-form">
+        <div class="btn-close"><a href="/src/main.html">&#10005;</a></div>
+        <div class="welcome">
+          <h2>Create a New Account</h2>
+          <p>Already have an account? <a href="/src/login.html">Sign In</a></p>
+        </div>
+
+        <form class="general-info">
+          <h3>General Information</h3>
+          <div class="form-group">
+            <label for="first-name">First Name</label>
+            <input type="text" id="first-name" name="first-name" required>
+          </div>
+          <div class="form-group">
+            <label for="last-name">Last Name</label>
+            <input type="text" id="last-name" name="last-name" required>
+          </div>
+          <div class="form-group">
+            <label for="date-of-birth">Date of Birth</label>
+            <input type="date" id="date-of-birth" name="date-of-birth" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+          </div>
+        </form>
+
+        <form class="shipping-address">
+          <h3>Shipping Address</h3>
+          <div class="form-group">
+            <label for="street">Street Address</label>
+            <input type="text" id="shipping-street" name="shipping-street" required>
+          </div>
+          <div class="form-group">
+            <label for="city">City</label>
+            <input type="text" id="shipping-city" name="shipping-city" required>
+          </div>
+          <div class="form-group">
+            <label for="postal-code">Postal Code</label>
+            <input type="text" id="shipping-postal-code" name="shipping-postal-code" required>
+          </div>
+          <div class="form-group">
+            <label for="country">Country</label>
+            <select id="country" name="country"></select>
+          </div>
+          <div class="set-as">
+            <input type="checkbox" id="default-shipping" name="default-shipping">
+            <span class="checkmark">Set as default shipping address</span>
+          </div>
+          <div class="set-as">
+            <input type="checkbox" id="default-billing" name="default-billing">
+            <span class="checkmark">Also use as billing address</span>
+          </div>
+        </form>
+
+        <form class="billing-address">
+          <h3>Billing Address</h3>
+          <div class="form-group">
+            <label for="street">Street Address</label>
+            <input type="text" id="shipping-street" name="shipping-street" required>
+          </div>
+          <div class="form-group">
+            <label for="city">City</label>
+            <input type="text" id="shipping-city" name="shipping-city" required>
+          </div>
+          <div class="form-group">
+            <label for="postal-code">Postal Code</label>
+            <input type="text" id="shipping-postal-code" name="shipping-postal-code" required>
+          </div>
+          <div class="form-group">
+            <label for="country">Country</label>
+            <select id="country" name="country"></select>
+          </div>
+          <div class="set-as">
+            <input type="checkbox" id="default-billing" name="default-billing">
+            <span class="checkmark">Set as default billing address</span>
+          </div>
+        </form>
+
+        <div class="warning" style="display: none;">
+          <p>The password must be 4 to 16 characters in length</p>
+        </div>
+        <button type="submit" class="btn-login">Register</button>
+      </div>
+    </div>
+  </main>
+</body>
+
+</html>

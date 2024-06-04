@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - Qomfy</title>
+  <link rel="stylesheet" href="/css/reset.css">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/login.css">
+  <link rel="icon" type="image/x-icon" href="/favicon.svg">
+</head>
+
+<body>
+  <main>
+    <div class="login-container">
+      <div class="product-image">
+        <h1 class="logo"><a href="/src/main.html">Qomfy</a></h1>
+        <img src="/img/img_2.jpg" alt="Product Image">
+        <div class="chef-name">Haircare System #0027</div>
+      </div>
+      <div class="login-form">
+        <div class="btn-close"><a href="/src/main.html">&#10005;</a></div>
+        <div class="welcome">
+          <h2>Welcome</h2>
+          <p>Don't have an account? <a href="/src/register.html">Sign Up</a></p>
+        </div>
+        <form>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="name@example.com" required>
+          </div>
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="••••••••••••" required>
+          </div>
+        </form>
+        <div class="warning" style="display: none;">
+          <p>The password must be 4 to 16 characters in length</p>
+        </div>
+        <button type="submit" class="btn-login">Login</button>
+      </div>
+    </div>
+  </main>
+</body>
+
+</html>
